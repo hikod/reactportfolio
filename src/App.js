@@ -1,31 +1,34 @@
 import './App.css';
+import React, { useState } from 'react';
 import Footer from './compenents/Footer';
+import Contact from './compenents/Contact';
+import Nav from './compenents/Navigation';
+import About from './compenents/About ';
+
 
 function App() {
 
 
   // const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
-  // const [contactSelected, setContactSelected] = useState(false);
+  const [contactSelected, setContactSelected] = useState(false);
 
   return (
     <div className="App">
-      {/* <Nav
+      <Nav
         // categories={categories}
         // setCurrentCategory={setCurrentCategory}
         // currentCategory={currentCategory}
         // contactSelected={contactSelected}
         // setContactSelected={setContactSelected}
-      ></Nav> */}
+      ></Nav>
       <main>
-        {/* {!contactSelected ? (
+        {!contactSelected ? (
           <>
-            <Gallery currentCategory={currentCategory}></Gallery>
             <About></About>
           </>
         ) : (
-          <ContactForm></ContactForm>
-        )} */}
+          <Contact></Contact>)}
       </main>
       <Footer></Footer>
     </div>
