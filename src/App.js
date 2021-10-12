@@ -2,8 +2,8 @@ import './App.css';
 import React, { useState } from 'react';
 import Footer from './compenents/Footer';
 import Contact from './compenents/Contact';
-import Nav from './compenents/Navigation';
 import About from './compenents/About ';
+import Header from './compenents/Header';
 
 
 function App() {
@@ -15,13 +15,10 @@ function App() {
 
   return (
     <div className="App">
-      <Nav
-        // categories={categories}
-        // setCurrentCategory={setCurrentCategory}
-        // currentCategory={currentCategory}
-        // contactSelected={contactSelected}
-        // setContactSelected={setContactSelected}
-      ></Nav>
+      <Header
+        contactSelected={contactSelected}
+        setContactSelected={setContactSelected}
+      ></Header>
       <main>
         {!contactSelected ? (
           <>
