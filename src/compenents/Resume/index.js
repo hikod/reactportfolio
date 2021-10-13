@@ -1,5 +1,5 @@
 import React from 'react';
-
+import pdf from '../../images/resume.pdf'
 
 function Resume() {
     return (
@@ -8,7 +8,7 @@ function Resume() {
             <div class="left"></div>
             <div class="stuff">
                     <h1>Resume</h1>
-                    <h2>Hikmet <a href="../../images/resume.pdf" download> <i class="fas fa-download"></i></a></h2>
+                    <h2>Hikmet <a href={pdf} download> <i class="fas fa-download"></i></a></h2>
                     <hr />
                         <p class="head">Interests</p>
                         <ul>
